@@ -8,7 +8,7 @@ Console.WriteLine("Введите число");
 int N = int.Parse(Console.ReadLine()!);
 int n = N;
 int NumLenght = 0;
-while (n > 1)
+while (n > 0)
 {
     n = n / 10;
     NumLenght++;
