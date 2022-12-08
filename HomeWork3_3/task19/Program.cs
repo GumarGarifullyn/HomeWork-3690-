@@ -29,7 +29,7 @@ while(degree >= (NumLenght/2))
         }
     degree = degree - 1;
     count = count + 1;
-Console.WriteLine(sum + "//");
+// Console.WriteLine(sum + "//");
     }       
 if(sum >= NumLenght/2)
 {
