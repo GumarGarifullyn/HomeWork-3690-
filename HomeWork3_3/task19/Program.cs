@@ -8,19 +8,19 @@ Console.WriteLine("Введите число");
 int N = int.Parse(Console.ReadLine()!);
 int n = N;
 int NumLenght = 0;
-while (n > 0)
+while (n > 1)
 {
     n = n / 10;
     NumLenght++;
 }
-// Console.WriteLine(NumLenght);
+Console.WriteLine(NumLenght);
 int degree = NumLenght-1;
 int count = 0;
-int sum = 0;
+ int sum = 0;
 while(degree >= (NumLenght/2))
     {
-        // Console.Write((int)N/(int)Math.Pow(10, degree) % 10 + "///");
-        // Console.Write((int)N/(int)Math.Pow(10, count) % 10 + "///");
+        Console.Write((int)N/(int)Math.Pow(10, degree) % 10 + "///");
+        Console.Write((int)N/(int)Math.Pow(10, count) % 10 + "///");
         if ((int)N/(int)Math.Pow(10, degree) % 10 == (int)N/(int)Math.Pow(10, count) % 10)
         {sum = sum +1;}
         else
@@ -29,7 +29,7 @@ while(degree >= (NumLenght/2))
         }
     degree = degree - 1;
     count = count + 1;
-// Console.WriteLine(sum + "//");
+Console.WriteLine(sum + "//");
     }       
 if(sum >= NumLenght/2)
 {

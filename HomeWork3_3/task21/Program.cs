@@ -20,5 +20,5 @@ int yb = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите координату Z для точки B");
 int zb = int.Parse(Console.ReadLine()!);
 
-double result = Math.Sqrt(Math.Pow((xb-xa),2) + Math.Pow((yb-ya),2) + Math.Pow((zb-za),2));
+int result = Math.Sqrt(Math.Pow((xb-xa),2) + Math.Pow((yb-ya),2) + Math.Pow((zb-za),2));
 Console.WriteLine($"Расстояние между точками равно --> {Math.Round(result,2)}");
