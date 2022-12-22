@@ -7,7 +7,7 @@ double[] Array(int size)
     double[] array = new double[size];
     for(int i = 0; i < size; i++)
     {
-        array[i] = Convert.ToDouble(new Random().Next(-100, 1000)/10.0);
+        array[i] = Convert.ToDouble(Math.Round(new Random().NextDouble(),2));
     }
         return array;
 }
@@ -38,7 +38,7 @@ void Diff(double[] inArray)
         if(min > el) min = el;
     }
 
-    Console.Write(" -> " + Math.Round((max-min),1));
+    Console.Write(" -> " + Math.Round((max-min),2));
   }
  
 int size = new Random().Next(3,7);
