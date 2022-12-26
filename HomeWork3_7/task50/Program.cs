@@ -9,7 +9,7 @@
 // [1,7] -> такого числа в массиве нет ([1,7] это позиция по индексам, 1- строка и 7 -столбец)
 
 
-double[,] GetArray()  // Метод создания рандомного двумерного массива с длиной строк и столбцов от 1 до 10
+double[,] GetArray()  // Метод создания рандомного двумерного массива с длиной строк и столбцов от 2 до 10
 {
     int m = new Random().Next(2,10);
     Console.WriteLine("m = " + m);
@@ -29,11 +29,10 @@ double[,] GetArray()  // Метод создания рандомного дву
 
 void PrintArray(double[,] inArray)  // Отображение двумерного массива на консоль
 {
-    for (int i = 0; i < inArray.GetLength(0); i++)
+        for (int i = 0; i < inArray.GetLength(0); i++)
     {
-        for (int j = 0; j < inArray.GetLength(1); j++)
+            for (int j = 0; j < inArray.GetLength(1); j++)
         {
-            
             if(j == inArray.GetLength(1)-1) Console.Write($"{inArray[i, j]} ");
             else Console.Write($"{inArray[i, j]}; ");
         }
